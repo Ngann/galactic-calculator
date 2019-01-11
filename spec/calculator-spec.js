@@ -43,4 +43,13 @@ describe('solarAge', function () {
     expect(yearsLeft).toEqual(55);
   });
 
+  it('will determing the user life expectacy on Earth', function() {
+    var ageEarth = 88;
+    var planet = "Earth";
+    var avgLifeExpectancy = 80;
+    const solarAge = new solarAge(ageEarth);
+    var yearsLeft= solarAge.yearsToLive(ageEarth, avgLifeExpectancy);
+    expect(yearsLeft).toEqual("You have surpase the average life expectacy of your fellow humans.");
+  });
+
 });
