@@ -1,4 +1,4 @@
-import { solarAge } from './../src/calculator.js';
+// import { solarAge } from './../src/calculator.js';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
