@@ -35,7 +35,7 @@ describe('solarAge', function () {
     expect(yearsLeft).toEqual('55 years to go!');
   });
 
-  it('will determine the user life exceed lide expectancy', function() {
+  it('will determine the user has lived pass the life expectancy', function() {
     var yearsLeft= oldObj.yearsToLive(avgLifeExpectancy);
     expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers.");
   });
