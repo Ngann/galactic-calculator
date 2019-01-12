@@ -37,7 +37,7 @@ describe('solarAge', function () {
 
   it('will determine the user has lived pass the life expectancy', function() {
     var yearsLeft= oldObj.yearsToLive(avgLifeExpectancy);
-    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers.");
+    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 10 years!");
   });
 
 });

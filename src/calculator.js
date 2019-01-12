@@ -33,11 +33,12 @@ class solarAge {
 
   yearsToLive(avgLifeExpectancy) {
     let life = avgLifeExpectancy - this.age;
+    let liveOn = this.age - avgLifeExpectancy;
 
     if (this.age < avgLifeExpectancy) {
       return life + " " + "years to go!";
     } else {
-    return  "You have surpase the average life expectancy of your peers.";
+    return  "You have surpase the average life expectancy of your peers by " + liveOn + " " +"years!";
     }
   }
 
