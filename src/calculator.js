@@ -1,33 +1,43 @@
+import { Age } from './../src/age.js';
+
 class solarAge {
-  constructor (age){
-    this.age = age;
+  // constructor (dob){
+  //   this.dob = dob;
+  // }
+  //
+  // getAge() {
+  //   let today = new Date();
+  //   let birthDate = new Date(this.dob);
+  //   let age = today.getFullYear() - birthDate.getFullYear();
+  //   // let month = today.getMonth() - birthDate.getMonth();
+  //   return age;
+  // }
+
+  yearsToDays(input){
+    return input * 365;
   }
 
-  yearsToDays(){
-    return this.age * 365;
-  }
-
-  mercuryAge() {
+  mercuryAge(userAge) {
     const mercury = .24;
-    let age = this.age / mercury;
+    let age = userAge / mercury;
     return Math.round(age);
   }
 
-  venusAge() {
+  venusAge(userAge) {
     const venus = .62;
-    let age = this.age / venus;
+    let age = userAge / venus;
     return Math.round(age);
   }
 
-  marsAge() {
+  marsAge(userAge) {
     const mars = 1.88;
-    let age = this.age/ mars;
+    let age = userAge / mars;
     return Math.round(age);
   }
 
-  jupiterAge() {
+  jupiterAge(userAge) {
     const jupiter = 11.86;
-    let age = this.age/ jupiter;
+    let age = userAge/ jupiter;
     return Math.round(age);
   }
 
