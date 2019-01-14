@@ -1,5 +1,3 @@
-import { solarAge } from './../src/calculator.js';
-
 function age(dob) {
   let today = new Date();
   let birthDate = new Date(dob);

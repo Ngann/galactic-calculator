@@ -3,8 +3,9 @@ import { age } from './../src/age.js';
 
 describe('Age', function () {
   let dob =  age("8/17/1994");
-  let ageObj = new solarAge(25);
-  let oldObj = new solarAge(90);
+  let ageObj = new solarAge(dob);
+  let oldDob =  age("8/17/1929");
+  let oldObj = new solarAge(oldDob);
   let avgLifeExpectancy = 80;
 
   it('will take DOB get the age', function() {
