@@ -1,5 +1,5 @@
 <h3 align="center"> ⭐️ Galactic Calculator ⭐️ </h3>
-<h4 align="center"> By Ngan Nguyen ⭐️ </h4>
+<h4 align="center"> By Ngan Nguyen </h4>
 
 ## Description
 
