@@ -1,8 +1,9 @@
-<h4 align="center"> ⭐️ Ngan Nguyen ⭐️ </h4>
+<h3 align="center"> ⭐️ Galactic Calculator ⭐️ </h3>
+<h4 align="center"> By Ngan Nguyen ⭐️ </h4>
 
 ## Description
 
-_This is a application which will calculate the solar age of an individuals._
+_This is as application which will calculate the solar age of an individual._
 
 ## Table of content
 
@@ -23,9 +24,6 @@ $ npm install
 3. Build the app:
 ```
 $ npm run build
-```
-```
-$ rails db:migrate
 ```
 4. To run the program:
 ```
