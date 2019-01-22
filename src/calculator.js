@@ -10,27 +10,19 @@ class solarAge {
   }
 
   mercuryAge() {
-    const mercury = .24;
-    let age = this.age / mercury;
-    return Math.round(age);
+    return Math.round(this.age/.24);
   }
 
   venusAge() {
-    const venus = .62;
-    let age = this.age / venus;
-    return Math.round(age);
+    return Math.round(this.age/.62);
   }
 
   marsAge() {
-    const mars = 1.88;
-    let age = this.age/ mars;
-    return Math.round(age);
+    return Math.round(this.age/1.88);
   }
 
   jupiterAge() {
-    const jupiter = 11.86;
-    let age = this.age/ jupiter;
-    return Math.round(age);
+    return Math.round(this.age/11.86);
   }
 
   yearsToLiveEarth(avgLifeExpectancy) {
@@ -45,8 +37,8 @@ class solarAge {
   }
 
   yearsToLiveMercury(avgLifeExpectancy) {
-    let life = .24 * (avgLifeExpectancy - this.age);
-    let liveOn = .24 * (this.age - avgLifeExpectancy);
+    let life = (avgLifeExpectancy - this.age)/.24;
+    let liveOn = (this.age - avgLifeExpectancy)/.24;
 
     if (this.age < avgLifeExpectancy) {
       return Math.round(life) + " " + "years to go!";
@@ -56,8 +48,8 @@ class solarAge {
   }
 
   yearsToLiveVenus(avgLifeExpectancy) {
-    let life = .62 * (avgLifeExpectancy - this.age);
-    let liveOn = .62 * (this.age - avgLifeExpectancy);
+    let life = (avgLifeExpectancy - this.age)/.62;
+    let liveOn = (this.age - avgLifeExpectancy)/.62;
 
     if (this.age < avgLifeExpectancy) {
       return Math.round(life) + " " + "years to go!";
@@ -67,8 +59,8 @@ class solarAge {
   }
 
   yearsToLiveMars(avgLifeExpectancy) {
-    let life = 1.88 * (avgLifeExpectancy - this.age);
-    let liveOn = 1.88 * (this.age - avgLifeExpectancy);
+    let life = (avgLifeExpectancy - this.age)/1.88;
+    let liveOn = (this.age - avgLifeExpectancy)/1.88;
 
     if (this.age < avgLifeExpectancy) {
       return Math.round(life) + " " + "years to go!";
@@ -78,8 +70,8 @@ class solarAge {
   }
 
   yearsToLiveJupiter(avgLifeExpectancy) {
-    let life = 11.86 * (avgLifeExpectancy - this.age);
-    let liveOn = 11.86 * (this.age - avgLifeExpectancy);
+    let life = (avgLifeExpectancy - this.age)/11.86;
+    let liveOn = (this.age - avgLifeExpectancy)/11.86;
 
     if (this.age < avgLifeExpectancy) {
       return Math.round(life) + " " + "years to go!";

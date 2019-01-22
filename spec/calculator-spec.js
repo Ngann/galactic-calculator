@@ -44,22 +44,22 @@ describe('Age', function () {
 
   it('will determine the user life expectancy on Mercury', function() {
     let yearsLeft= ageObj.yearsToLiveMercury(avgLifeExpectancy);
-    expect(yearsLeft).toEqual('13 years to go!');
+    expect(yearsLeft).toEqual('229 years to go!');
   });
 
   it('will determine the user life expectancy on Venus', function() {
     let yearsLeft= ageObj.yearsToLiveVenus(avgLifeExpectancy);
-    expect(yearsLeft).toEqual('34 years to go!');
+    expect(yearsLeft).toEqual('89 years to go!');
   });
 
   it('will determine the user life expectancy on Mars', function() {
     let yearsLeft= ageObj.yearsToLiveMars(avgLifeExpectancy);
-    expect(yearsLeft).toEqual('103 years to go!');
+    expect(yearsLeft).toEqual('29 years to go!');
   });
 
   it('will determine the user life expectancy on Jupiter', function() {
     let yearsLeft= ageObj.yearsToLiveJupiter(avgLifeExpectancy);
-    expect(yearsLeft).toEqual('652 years to go!');
+    expect(yearsLeft).toEqual('5 years to go!');
   });
 
   it('will determine the user has lived pass the life expectancy on Earth', function() {
@@ -69,22 +69,22 @@ describe('Age', function () {
 
   it('will determine the user has lived pass the life expectancy on Mercury', function() {
     let yearsLeft= oldObj.yearsToLiveMercury(avgLifeExpectancy);
-    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 2 years!");
+    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 42 years!");
   });
 
   it('will determine the user has lived pass the life expectancy on Venus', function() {
     let yearsLeft= oldObj.yearsToLiveVenus(avgLifeExpectancy);
-    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 6 years!");
+    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 16 years!");
   });
 
   it('will determine the user has lived pass the life expectancy on Mars', function() {
     let yearsLeft= oldObj.yearsToLiveMars(avgLifeExpectancy);
-    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 19 years!");
+    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 5 years!");
   });
 
   it('will determine the user has lived pass the life expectancy on Jupiter', function() {
     let yearsLeft= oldObj.yearsToLiveJupiter(avgLifeExpectancy);
-    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 119 years!");
+    expect(yearsLeft).toEqual("You have surpase the average life expectancy of your peers by 1 years!");
   });
 
 });
