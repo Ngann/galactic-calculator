@@ -33,7 +33,7 @@ class solarAge {
     return Math.round(age);
   }
 
-  yearsToLive(avgLifeExpectancy) {
+  yearsToLiveEarth(avgLifeExpectancy) {
     let life = avgLifeExpectancy - this.age;
     let liveOn = this.age - avgLifeExpectancy;
 
@@ -41,6 +41,50 @@ class solarAge {
       return life + " " + "years to go!";
     } else {
     return  "You have surpase the average life expectancy of your peers by " + liveOn + " " +"years!";
+    }
+  }
+
+  yearsToLiveMercury(avgLifeExpectancy) {
+    let life = .24 * (avgLifeExpectancy - this.age);
+    let liveOn = .24 * (this.age - avgLifeExpectancy);
+
+    if (this.age < avgLifeExpectancy) {
+      return Math.round(life) + " " + "years to go!";
+    } else {
+    return  "You have surpase the average life expectancy of your peers by " + Math.round(liveOn) + " " +"years!";
+    }
+  }
+
+  yearsToLiveVenus(avgLifeExpectancy) {
+    let life = .62 * (avgLifeExpectancy - this.age);
+    let liveOn = .62 * (this.age - avgLifeExpectancy);
+
+    if (this.age < avgLifeExpectancy) {
+      return Math.round(life) + " " + "years to go!";
+    } else {
+    return  "You have surpase the average life expectancy of your peers by " + Math.round(liveOn) + " " +"years!";
+    }
+  }
+
+  yearsToLiveMars(avgLifeExpectancy) {
+    let life = 1.88 * (avgLifeExpectancy - this.age);
+    let liveOn = 1.88 * (this.age - avgLifeExpectancy);
+
+    if (this.age < avgLifeExpectancy) {
+      return Math.round(life) + " " + "years to go!";
+    } else {
+    return  "You have surpase the average life expectancy of your peers by " + Math.round(liveOn) + " " +"years!";
+    }
+  }
+
+  yearsToLiveJupiter(avgLifeExpectancy) {
+    let life = 11.86 * (avgLifeExpectancy - this.age);
+    let liveOn = 11.86 * (this.age - avgLifeExpectancy);
+
+    if (this.age < avgLifeExpectancy) {
+      return Math.round(life) + " " + "years to go!";
+    } else {
+    return  "You have surpase the average life expectancy of your peers by " + Math.round(liveOn) + " " +"years!";
     }
   }
 
